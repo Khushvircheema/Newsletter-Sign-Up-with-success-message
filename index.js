@@ -12,8 +12,13 @@ form.addEventListener("submit", (event) => {
   successCard.classList.remove("hide");
   console.log(email.value);
   document.querySelector("strong").innerText = email.value;
-})
-function homepage() {
-  window.location.href = "https://khushvircheema.github.io/Newsletter-Sign-Up-with-success-message/";
-}
+});
+
+dismiss.addEventListener("click", (event) => {
+ window.location.href = "https://khushvircheema.github.io/Newsletter-Sign-Up-with-success-message/";
+});
+
+// function homepage() {
+//   window.location.href = "https://khushvircheema.github.io/Newsletter-Sign-Up-with-success-message/";
+// };
 
