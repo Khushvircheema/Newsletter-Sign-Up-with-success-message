@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robot", sans-serif;
+}
+
+body {
+  height: 95vh;
+  width: 100vw;
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1%;
+  display: flex;
+  border-radius: 15px;
+  overflow: auto;
+  margin: auto;
+}
+.text {
+  padding: 4%;
+}
+.image {
+  width: fit-content;
+  height: min-content;
+  position: relative;
+}
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.attribution {
+  position: absolute;
+  bottom: 4%;
+}
+h1 {
+  font-size: 2.5rem;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 10px 0;
+}
+.card_ul_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5%;
+}
+li img {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+}
+.ul__image {
+  margin-right: 10px;
+}
+
+form {
+  height: 8rem;
+  display: inline;
+}
+span {
+  color: hsl(234, 29%, 20%);
+}
+input {
+  height: 35px;
+  width: 100%;
+  margin: 5px 0 15px 0;
+  border: solid 1px hsl(231, 7%, 60%);
+  outline: none;
+  border-radius: 5px;
+  text-align: left;
+  padding: 2%;
+}
+
+input:focus {
+  border: solid 1px hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.1);
+}
+button {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+}
+
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+img[src="/assets/images/illustration-sign-up-mobile.svg"] {
+  display: none;
+}
+.cardSuccess {
+  height: 50vh;
+  width: min-content;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 20px;
+  padding: 0 3%;
+}
+.cardSuccess img {
+  width: 50px;
+  position: relative;
+  top: -10px;
+}
+.cardSuccess p {
+  margin: 8% 0;
+}
+.hide {
+  display: none;
+}
+@media (max-width: 821px) {
+  .cardSuccess {
+    height: 40vh;
+    width: fit-content;
+    margin: 0 20%;
+  }
+}
+@media (max-width: 415px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+  }
+  .card {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-top: 0;
+  }
+  img[src="/assets/images/illustration-sign-up-desktop.svg"] {
+    display: none;
+  }
+  img[src="/assets/images/illustration-sign-up-mobile.svg"] {
+    display: block;
+  }
+  .image {
+    order: 0;
+  }
+
+  .text {
+    order: 1;
+    padding: 6%;
+    font-size: large;
+  }
+  .ul__image li:nth-child(2) {
+    margin-top: 24px;
+  }
+  .ul__image li:nth-child(3) {
+    margin-top: 22px;
+  }
+
+  input {
+    height: 50px;
+    font-size: large;
+    padding-left: 8%;
+  }
+  button {
+    height: 60px;
+  }
+  .attribution {
+    color: whitesmoke;
+  }
+  .cardSuccess {
+    height: 44vh;
+    border: 20px solid whitesmoke;
+  }
+}
